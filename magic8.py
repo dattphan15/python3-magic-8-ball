@@ -9,3 +9,9 @@ random_number = random.randint(1, 9)
 
 # prints a random number
 print(random_number)
+
+if random_number == 1:
+  answer = "Yes - definitely."
+
+# prints answer
+print(answer)
