@@ -5,7 +5,7 @@ question = "Is Python3 the latest Python version?"
 answer = ""
 
 # generate a random number between 1 (inclusive) and 9 (inclusive).
-random_number = random.randint(1, 9)
+random_number = random.randint(1, 12)
 
 # prints a random number
 print("Random number: " + str(random_number))
@@ -28,11 +28,19 @@ elif random_number == 8:
   answer = "Outlook not so good."
 elif random_number == 9:
   answer = "Very doubtful."
+elif random_number == 10:
+  answer = "You've guessed it right."
+elif random_number == 11:
+  answer = "Listen to your inner spirit."
 else:
   answer =  "Error"
     
 
-# prints question
-print(name + " asks: " + question)
+# prints name of the person who printed the question if it exists.
+if name:
+  print(name + " asks: " + question)
+else:
+  print("Question: " + question)
+
 # prints answer
 print("Magic 8-Ball's answer: " + answer)
