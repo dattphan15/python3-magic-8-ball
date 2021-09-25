@@ -8,7 +8,7 @@ answer = ""
 random_number = random.randint(1, 9)
 
 # prints a random number
-print(random_number)
+print("Random number: " + str(random_number))
 
 if random_number == 1:
   answer = "Yes - definitely."
@@ -32,5 +32,7 @@ else:
   answer =  "Error"
     
 
-# prints answer
+# prints question
 print(name + " asks: " + question)
+# prints answer
+print("Magic 8-Ball's answer: " + answer)
